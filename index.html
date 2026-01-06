@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decision Comparator Tool</title>
+</head>
+<body>
+    <h1>Decision Comparator</h1>
+    <select id="options">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+    <button onclick="compare()">Compare</button>
+    <div id="result"></div>
+
+    <script>
+    function compare() {
+        const select = document.getElementById('options');
+        const choice = select.value;
+        let result = '';
+        if(choice === 'option1'){
+            result = 'Pros: ... Cons: ...';
+        } else {
+            result = 'Pros: ... Cons: ...';
+        }
+        document.getElementById('result').innerText = result;
+    }
+    </script>
+</body>
+</html>
